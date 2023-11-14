@@ -65,5 +65,24 @@ console.log(name, age);
 const addtional = [10, 20, 30]
 let newArray = [...arr, ...addtional].reduce((sum, item) => sum + item, 0)
 console.log(newArray);
-//9
 
+//9 Sử dụng Rest parameter để nhận vào một danh sách tên và trả về chuỗi định dạng
+// "Welcome, [tên1], [tên2], [tên3], ..." cho tất cả các tên.
+
+const names = ["Trung", "Hoàng", "Lâm"]
+let rs = `Welcome ${[...names]}`
+console.log(rs)
+//10.Tạo một đối tượng "book" với thuộc tính "title", "author" và "pages" bằng cách sử dụng
+// Enhanced object literals. Đối tượng "book" cũng có phương thức "displayInfo" để in ra thông tin về sách.
+
+const book = {
+    title: "Truyện Kiều",
+    author: "Nguyễn Du",
+    pages: 100,
+    displayInfo(){
+        console.log(`Title:${this.title}`)
+        console.log(`Author:${this.author}`)
+        console.log(`Pages:${this.pages}`)
+    }
+}
+book.displayInfo();
