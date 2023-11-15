@@ -17,7 +17,7 @@ const posts = [
     },
     {
         "title": " 2023 will see the death of play-to-earn gaming ",
-        "slug": "2023-will-see-the-death-of-playtoearn-gaming",
+        "slug": "2023-will-see-the-death-of-play-to-earn-gaming",
         "category": " Opinion",
         "updatedAt": "a day ago"
     },
