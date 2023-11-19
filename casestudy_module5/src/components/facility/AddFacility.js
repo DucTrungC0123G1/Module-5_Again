@@ -1,9 +1,11 @@
+import React from "react";
+
 export function AddFacility() {
     return (
         <>
             <div className="container px-5 my-5">
                 <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    <h1 style="text-align: center;">danh sách dịch vụ</h1>
+                    <h1 style={{textAlign: "center"}}>danh sách dịch vụ</h1>
                     <div className="mb-3">
                         <label className="form-label" htmlFor="nameService">Tên dịch vụ</label>
                         <input className="form-control" id="nameService" type="text" placeholder="Tên dịch vụ"
