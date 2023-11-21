@@ -1,7 +1,10 @@
+import React from "react";
+import {Link} from "react-router-dom";
+
 export function EditCustomer() {
     return (
         <>
-            <div style="text-align: center;">
+            <div style={{textAlign: "center"}}>
                 <h1>Sửa thông tin khách hàng</h1>
             </div>
             <div className="container px-5 my-5">
@@ -81,8 +84,12 @@ export function EditCustomer() {
                         <div className="text-center text-danger mb-3">Error sending message!</div>
                     </div>
                     <div className="d-grid">
-                        <button className="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit
+                        <button className="btn btn-primary" id="submitButton" type="submit">Submit
                         </button>
+                        <Link to="/customers-list" className="btn btn-outline-warning">
+                            Cancel
+                        </Link>
+
                     </div>
                 </form>
             </div>

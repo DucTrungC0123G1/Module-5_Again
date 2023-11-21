@@ -6,6 +6,8 @@ function ListFacility() {
         <>
             <div className="min-vh-100 ">
                 <h1 style={{textAlign: "center", marginTop: "1rem"}}>List Rooms</h1>
+                <Link to="/facility-add" className="btn btn-outline-success"
+                      style={{float: "right", marginRight: "2rem"}}>Thêm mới</Link>
                 <div className="d-flex flex-wrap justify-content-start m-5">
                     <div className="card flex-grow-1" style={{width: "18rem"}}>
                         <img src="https://decofuni.vn/Upload/images/tin-tuc/noi-that-phong-ngu-resort.jpg"
@@ -16,7 +18,8 @@ function ListFacility() {
                                 the bulk
                                 of
                                 the card's content.</p>
-                            <a href="#" className="btn btn-primary">Book</a>
+                            <Link href="#" className="btn btn-primary">Book</Link>
+                            <Link style={{marginLeft:"63%"}} to="/facility-edit" className="btn btn-warning">Sửa</Link>
                         </div>
 
                     </div>
@@ -30,6 +33,7 @@ function ListFacility() {
                                 of
                                 the card's content.</p>
                             <a href="#" className="btn btn-primary">Book</a>
+                            <Link  style={{marginLeft:"63%"}} to="/facility-edit" className="btn btn-warning">Sửa</Link>
                         </div>
                     </div>
                     <div className="card flex-grow-1" style={{width: "18rem"}}>
@@ -43,6 +47,7 @@ function ListFacility() {
                                 of
                                 the card's content.</p>
                             <a href="#" className="btn btn-primary">Book</a>
+                            <Link style={{marginLeft:"63%"}} to="/facility-edit" className="btn btn-warning">Sửa</Link>
                         </div>
                     </div>
                     <div className="card flex-grow-1" style={{width: "18rem"}}>
@@ -56,6 +61,7 @@ function ListFacility() {
                                 of
                                 the card's content.</p>
                             <a href="#" className="btn btn-primary">Book</a>
+                            <Link style={{marginLeft:"63%"}} to="/facility-edit" className="btn btn-warning">Sửa</Link>
                         </div>
                     </div>
                 </div>

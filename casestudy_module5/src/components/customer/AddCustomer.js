@@ -1,11 +1,14 @@
+import React from "react";
+import {Link} from "react-router-dom";
+
 export function AddCustomer() {
     return (
         <>
-            <div style="text-align: center;">
+            <div style={{textAlign: "center"}}>
                 <h1>Thêm mới khách hàng</h1>
             </div>
             <div className="container px-5 my-5">
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <form id="contactForm">
                     <div className="mb-3">
                         <label className="form-label" htmlFor="name">Họ tên</label>
                         <input className="form-control" id="name" type="text" placeholder="Họ tên"
@@ -14,7 +17,7 @@ export function AddCustomer() {
                     </div>
                     <div className="mb-3">
                         <label className="form-label" htmlFor="date">Ngày sinh</label>
-                        <input className="form-control" id="date" type="text" placeholder="Ngày sinh"
+                        <input className="form-control" id="date" type="date" placeholder="Ngày sinh"
                                data-sb-validations="required"/>
                         <div className="invalid-feedback" data-sb-feedback="date:required">Ngày sinh is required.</div>
                     </div>
@@ -80,8 +83,12 @@ export function AddCustomer() {
                         <div className="text-center text-danger mb-3">Error sending message!</div>
                     </div>
                     <div className="d-grid">
-                        <button className="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit
+
+                        <button className="btn btn-primary" id="submitButton" type="submit">Submit
                         </button>
+                        <Link to="/customers-list" className="btn btn-outline-warning">
+                            Cancel
+                        </Link>
                     </div>
                 </form>
             </div>

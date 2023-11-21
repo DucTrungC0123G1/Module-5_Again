@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 export function EditFacility() {
     return (
@@ -38,8 +39,11 @@ export function EditFacility() {
                         <div className="text-center text-danger mb-3">Error sending message!</div>
                     </div>
                     <div className="d-grid">
-                        <button className="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit
+                        <button className="btn btn-primary" id="submitButton" type="submit">Submit
                         </button>
+                        <Link to="/facility-list" className="btn btn-outline-warning">
+                            Cancel
+                        </Link>
                     </div>
                 </div>
             </form>

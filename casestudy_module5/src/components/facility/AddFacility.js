@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 export function AddFacility() {
     return (
@@ -50,15 +51,18 @@ export function AddFacility() {
                         <div className="text-center mb-3">
                             <div className="fw-bolder">Form submission successful!</div>
                             <p>To activate this form, sign up at</p>
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                         </div>
                     </div>
                     <div className="d-none" id="submitErrorMessage">
                         <div className="text-center text-danger mb-3">Error sending message!</div>
                     </div>
                     <div className="d-grid">
-                        <button className="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit
+
+                        <button className="btn btn-primary" id="submitButton" type="submit">Submit
                         </button>
+                        <Link to="/facility-list" className="btn btn-outline-warning">
+                            Cancel
+                        </Link>
                     </div>
                 </form>
             </div>

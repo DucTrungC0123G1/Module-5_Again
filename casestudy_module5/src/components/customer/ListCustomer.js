@@ -1,11 +1,13 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 export function ListCustomer() {
     return (
         <>
-            <div style="min-height: 28rem;margin-top: 5rem;">
-                <h1 style="text-align: center;">Danh sách khách hàng</h1>
-                <a href="#" className="btn btn-outline-success" style="float: right;margin-right: 2rem;">Thêm mới</a>
+            <div style={{minHeight: "28rem", marginTop: "5rem"}}>
+                <h1 style={{textAlign: "center"}}>Danh sách khách hàng</h1>
+                <Link to="/customer-add" className="btn btn-outline-success"
+                      style={{float: "right", marginRight: "2rem"}}>Thêm mới</Link>
                 <table className="table table-striped table-hover mt-2">
                     <thead>
                     <th>STT</th>
@@ -19,6 +21,7 @@ export function ListCustomer() {
                     <th>Địa chỉ</th>
                     <th colSpan="2">CHỨC NĂNG</th>
                     </thead>
+                    <tbody>
                     <tr>
                         <td>1</td>
                         <td>Nguyễn Đức Trung</td>
@@ -30,7 +33,7 @@ export function ListCustomer() {
                         <td>Diamond</td>
                         <td>Đà Nẵng</td>
                         <td>
-                            <a className="btn btn-outline-primary border border-dark" href="#">Sửa</a>
+                            <Link to="/customer-edit" className="btn btn-outline-primary border border-dark">Sửa</Link>
                         </td>
                         <td>
                             <a href="#" className="btn btn-outline-danger btn-square border-dark" data-bs-toggle="modal"
@@ -39,6 +42,7 @@ export function ListCustomer() {
                             </a>
                         </td>
                     </tr>
+
 
                     <tr>
                         <td>1</td>
@@ -51,7 +55,7 @@ export function ListCustomer() {
                         <td>Diamond</td>
                         <td>Đà Nẵng</td>
                         <td>
-                            <a className="btn btn-outline-primary border border-dark" href="#">Sửa</a>
+                            <Link to="/customer-edit" className="btn btn-outline-primary border border-dark">Sửa</Link>
                         </td>
                         <td>
                             <a href="#" className="btn btn-outline-danger btn-square border-dark" data-bs-toggle="modal"
@@ -60,33 +64,8 @@ export function ListCustomer() {
                             </a>
                         </td>
                     </tr>
+                    </tbody>
                 </table>
-
-                <!--modal-delete-->
-                <div className="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false"
-                     tabIndex="-1"
-                     aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div className="modal-dialog modal-dialog">
-                        <div className="modal-content">
-                            <form>
-                                <div className="modal-header" style="background-color: #FFD333">
-                                    <h5 className="modal-title fs-5" id="staticBackdropLabel">Bạn chắc chắn muốn
-                                        xóa</h5>
-                                    <button type="button" className="btn-close" data-bs-dismiss="modal"
-    aria-label="Close"/>
-                                </div>
-                                <div className="modal-body">
-                                    <input id="customerId" name="id" type="hidden"/>
-                                        <span>Khách hàng tên </span>
-                                        <span id="customerName" name="deleteName"></span>
-                                </div>
-                                <div className="modal-footer">
-                                    <button type="submit" className="btn btn-danger">Xóa</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
             </div>
         </>
     )
