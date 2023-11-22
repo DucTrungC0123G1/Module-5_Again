@@ -10,6 +10,7 @@ import {Routes, Route} from "react-router-dom";
 import {ListCustomer} from "./components/customer/ListCustomer";
 import {AddCustomer} from "./components/customer/AddCustomer";
 import {EditCustomer} from "./components/customer/EditCustomer";
+import {Index} from "./components/index/Index";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <>
             <Header/>
             <Routes>
+                <Route path="/" element={<Index/>}/>
                 <Route path="/facility-list" element={<ListFacility/>}/>
                 <Route path="/facility-add" element={<AddFacility/>}/>
                 <Route path="/facility-edit" element={<EditFacility/>}/>
