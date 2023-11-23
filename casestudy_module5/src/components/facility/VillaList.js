@@ -38,7 +38,6 @@ export function VillaList() {
                                     </div>
                                 </div>
                             </div>
-
                         )
                     )}
                 </div>

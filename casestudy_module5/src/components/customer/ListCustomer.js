@@ -51,27 +51,27 @@ export function CustomerList() {
     return (
         customer && (
             <>
-                <h1 className="title">List Customer</h1>
+                <h1 className="title" style={{textAlign:"center"}}>List Customer</h1>
 
                 <div className="container">
                     <div className="form-outline" style={{display: 'flex'}}>
                         {/*onChange={(evt)=>{setNameSearch(evt.target.value)}}*/}
-                        <Link className="btn btn-outline-primary" to="/customers/create">Add</Link>
-                        <input style={{marginLeft: '70%', width: '15%'}} type="text" id="nameSearch"
-                               className="form-control" placeholder="Search Name"/>
-                        <div>
-                            <select style={{width:'100%'}} id="typeSearch" className="form-select" aria-label="Default select example">
-                                <option value="">Select</option>
-                                {customerType.map((customerType) => (
-                                    <option key={customerType.id} value={customerType.id}>{customerType.name}</option>
-                                ))}
-                            </select>
-                        </div>
-                        <button type="submit" className="btn btn-primary" onClick={() => getSearch()}>
-                            <i className="fas fa-search"/>
-                        </button>
+                        <Link className="btn btn-outline-primary" to="/customer-add">Add</Link>
+                        {/*<input style={{marginLeft: '70%', width: '15%'}} type="text" id="nameSearch"*/}
+                        {/*       className="form-control" placeholder="Search Name"/>*/}
+                        {/*<div>*/}
+                        {/*    <select style={{width:'100%'}} id="typeSearch" className="form-select" aria-label="Default select example">*/}
+                        {/*        <option value="">Select</option>*/}
+                        {/*        {customerType.map((customerType) => (*/}
+                        {/*            <option key={customerType.id} value={customerType.id}>{customerType.name}</option>*/}
+                        {/*        ))}*/}
+                        {/*    </select>*/}
+                        {/*</div>*/}
+                        {/*<button type="submit" className="btn btn-primary" onClick={() => getSearch()}>*/}
+                        {/*    <i className="fas fa-search"/>*/}
+                        {/*</button>*/}
                     </div>
-                    <table className="table" style={{marginTop:'200px'}}>
+                    <table className="table" style={{marginTop:'20px'}}>
                         <thead>
                         <tr id="header">
                             <th>#</th>

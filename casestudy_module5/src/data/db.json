@@ -1,0 +1,382 @@
+{
+  "Contracts": [
+    {
+      "id": 2,
+      "code": "Contract-02",
+      "dateStart": "2023-05-15",
+      "dateEnd": "2023-06-15",
+      "depositMoney": 500000,
+      "totalMoney": 1000000
+    },
+    {
+      "id": 3,
+      "code": "Contract-03",
+      "dateStart": "2023-12-23",
+      "dateEnd": "2023-12-30",
+      "depositMoney": 500000,
+      "totalMoney": 1000000
+    },
+    {
+      "id": 4,
+      "code": "Contract-04",
+      "dateStart": "2023-01-25",
+      "dateEnd": "2023-05-15",
+      "depositMoney": 500000,
+      "totalMoney": 1000000
+    },
+    {
+      "id": 5,
+      "code": "Contract-05",
+      "dateStart": "2023-10-15",
+      "dateEnd": "2023-11-15",
+      "depositMoney": 500000,
+      "totalMoney": 1000000
+    },
+    {
+      "id": 6,
+      "code": "Contract-06",
+      "dateStart": "2023-04-15",
+      "dateEnd": "2023-06-15",
+      "depositMoney": 500000,
+      "totalMoney": 1000000
+    },
+    {
+      "id": 7,
+      "code": "Contract-07",
+      "dateStart": "2023-07-22",
+      "dateEnd": "2023-08-22",
+      "depositMoney": 500000,
+      "totalMoney": 1000000
+    },
+    {
+      "id": 8,
+      "code": "Contract-08",
+      "dateStart": "2023-07-22",
+      "dateEnd": "2023-08-22",
+      "depositMoney": 500000,
+      "totalMoney": 1000000
+    },
+    {
+      "id": 9,
+      "code": "Contract-09",
+      "dateStart": "2023-09-22",
+      "dateEnd": "2023-10-22",
+      "depositMoney": 500000,
+      "totalMoney": "100000"
+    }
+  ],
+  "Customers": [
+    {
+      "id": 1,
+      "name": "Nguyễn Đức Trung",
+      "dob": "2001-06-05",
+      "gender": "Nam",
+      "identity": "049098000697",
+      "phone": "0338210411",
+      "email": "TrungNguyen@gmail.com",
+      "customerType": {
+        "id": 2,
+        "name": "Platinium"
+      },
+      "location": "Việt Nam"
+    },
+    {
+      "id": 2,
+      "name": "Nguyễn Hoàng Phát",
+      "dob": "2001-06-05",
+      "gender": "Nam",
+      "identity": "049098000697",
+      "phone": "0338210411",
+      "email": "TrungNguyen@gmail.com",
+      "customerType": {
+        "id": 2,
+        "name": "Platinium"
+      },
+      "location": "Việt Nam"
+    },
+    {
+      "name": "Phan Việt",
+      "dob": "2001-06-05",
+      "gender": "Nam",
+      "identity": "049098000697",
+      "phone": "0338210411",
+      "email": "TrungNguyen@gmail.com",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      },
+      "location": "Việt Nam123",
+      "id": 5
+    }
+  ],
+  "CustomerType": [
+    {
+      "id": 1,
+      "name": "Diamond"
+    },
+    {
+      "id": 2,
+      "name": "Platinium"
+    },
+    {
+      "id": 3,
+      "name": "Gold"
+    },
+    {
+      "id": 4,
+      "name": "Silver"
+    },
+    {
+      "id": 5,
+      "name": "Member"
+    }
+  ],
+  "Villas": [
+    {
+      "id": 1,
+      "name": "SUPERIOR ROOM FACING LAKE",
+      "area": "40",
+      "cost": 200000,
+      "capacity": 3,
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Lagoon-Superior-twin-bed-M-1047x563.jpg",
+      "typeRental": {
+        "id": 2,
+        "name": "day"
+      },
+      "description": "alo",
+      "standard": "Vip",
+      "poolArea": 10,
+      "floor": 2
+    },
+    {
+      "id": 2,
+      "name": "SUPERIOR ROOM FACING LAKE",
+      "area": "40",
+      "cost": 200000,
+      "capacity": 3,
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Lagoon-Superior-twin-bed-M-1047x563.jpg",
+      "typeRental": {
+        "id": 2,
+        "name": "day"
+      },
+      "description": "alo",
+      "standard": "Vip",
+      "poolArea": 10,
+      "floor": 2
+    },
+    {
+      "id": 3,
+      "name": "SUPERIOR ROOM FACING LAKE",
+      "area": "40",
+      "cost": 200000,
+      "capacity": 3,
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Lagoon-Superior-twin-bed-M-1047x563.jpg",
+      "typeRental": {
+        "id": 2,
+        "name": "day"
+      },
+      "description": "alo",
+      "standard": "Vip",
+      "poolArea": 10,
+      "floor": 2
+    },
+    {
+      "id": 4,
+      "name": "SUPERIOR ROOM FACING LAKE",
+      "area": "40",
+      "cost": 200000,
+      "capacity": 3,
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Lagoon-Superior-twin-bed-M-1047x563.jpg",
+      "typeRental": {
+        "id": 2,
+        "name": "day"
+      },
+      "description": "alo",
+      "standard": "Vip",
+      "poolArea": 10,
+      "floor": 2
+    },
+    {
+      "id": 5,
+      "name": "SUPERIOR ROOM FACING LAKE",
+      "area": "40",
+      "cost": 200000,
+      "capacity": 3,
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Lagoon-Superior-twin-bed-M-1047x563.jpg",
+      "typeRental": {
+        "id": 2,
+        "name": "day"
+      },
+      "description": "alo",
+      "standard": "Vip",
+      "poolArea": 10,
+      "floor": 2
+    }
+  ],
+  "Room": [
+    {
+      "id": 6,
+      "name": "SUPERIOR ROOM FACING LAKE",
+      "area": "40",
+      "cost": 200000,
+      "capacity": 3,
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/722781/722781/63984554_XL.jpg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=55",
+      "typeRental": {
+        "id": 2,
+        "name": "day"
+      },
+      "description": "alo",
+      "standard": "Vip",
+      "poolArea": 10,
+      "floor": 2
+    },
+    {
+      "id": 7,
+      "name": "SUPERIOR ROOM FACING LAKE",
+      "area": "40",
+      "cost": 200000,
+      "capacity": 3,
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Furama_Ocean_Deluxe-2-872x563.jpg",
+      "typeRental": {
+        "id": 2,
+        "name": "day"
+      },
+      "description": "alo",
+      "standard": "Vip",
+      "poolArea": 10,
+      "floor": 2
+    },
+    {
+      "id": 8,
+      "name": "SUPERIOR ROOM FACING LAKE",
+      "area": "40",
+      "cost": 200000,
+      "capacity": 3,
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Furama_Garden-Deluxe-5-872x563.jpg",
+      "typeRental": {
+        "id": 2,
+        "name": "day"
+      },
+      "description": "alo",
+      "standard": "Vip",
+      "poolArea": 10,
+      "floor": 2
+    },
+    {
+      "id": 9,
+      "name": "SUPERIOR ROOM FACING LAKE",
+      "area": "40",
+      "cost": 200000,
+      "capacity": 3,
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Lagoon-Superior-twin-bed-M-1047x563.jpg",
+      "typeRental": {
+        "id": 2,
+        "name": "day"
+      },
+      "description": "alo",
+      "standard": "Vip",
+      "poolArea": 10,
+      "floor": 2
+    }
+  ],
+  "House": [
+    {
+      "id": 10,
+      "name": "SUPERIOR ROOM FACING LAKE",
+      "area": "40",
+      "cost": 200000,
+      "capacity": 3,
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/722781/722781/63984554_XL.jpg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=55",
+      "typeRental": {
+        "id": 2,
+        "name": "day"
+      },
+      "description": "alo",
+      "standard": "Vip",
+      "poolArea": 10,
+      "floor": 2
+    },
+    {
+      "id": 11,
+      "name": "SUPERIOR ROOM FACING LAKE",
+      "area": "40",
+      "cost": 200000,
+      "capacity": 3,
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Furama_Ocean_Deluxe-2-872x563.jpg",
+      "typeRental": {
+        "id": 2,
+        "name": "day"
+      },
+      "description": "alo",
+      "standard": "Vip",
+      "poolArea": 10,
+      "floor": 2
+    },
+    {
+      "id": 12,
+      "name": "SUPERIOR ROOM FACING LAKE",
+      "area": "40",
+      "cost": 200000,
+      "capacity": 3,
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Furama_Garden-Deluxe-5-872x563.jpg",
+      "typeRental": {
+        "id": 2,
+        "name": "day"
+      },
+      "description": "alo",
+      "standard": "Vip",
+      "poolArea": 10,
+      "floor": 2
+    },
+    {
+      "id": 13,
+      "name": "SUPERIOR ROOM FACING LAKE",
+      "area": "40",
+      "cost": 200000,
+      "capacity": 3,
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Lagoon-Superior-twin-bed-M-1047x563.jpg",
+      "typeRental": {
+        "id": 2,
+        "name": "day"
+      },
+      "description": "alo",
+      "standard": "Vip",
+      "poolArea": 10,
+      "floor": 2
+    },
+    {
+      "id": 14,
+      "name": "SUPERIOR ROOM FACING LAKE",
+      "area": "40",
+      "cost": 200000,
+      "capacity": 3,
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/722781/722781/63984554_XL.jpg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=55",
+      "typeRental": {
+        "id": 2,
+        "name": "day"
+      },
+      "description": "alo",
+      "standard": "Vip",
+      "poolArea": 10,
+      "floor": 2
+    }
+  ],
+  "TypeRental": [
+    {
+      "id": 1,
+      "name": "hour"
+    },
+    {
+      "id": 2,
+      "name": "day"
+    },
+    {
+      "id": 3,
+      "name": "month"
+    },
+    {
+      "id": 4,
+      "name": "year"
+    }
+  ]
+}
