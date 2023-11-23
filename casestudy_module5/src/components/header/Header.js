@@ -59,7 +59,7 @@ function Header() {
                         <Link to={"/customers-list"} style={{textDecoration:'none'}}><a className="nav-item nav-link">
                             Customer
                         </a></Link>
-                        <Link to={"/contracts"} style={{textDecoration:'none'}}><a className="nav-item nav-link">
+                        <Link to={"/contract-list"} style={{textDecoration:'none'}}><a className="nav-item nav-link">
                             Contract
                         </a></Link>
                         <div className="nav-item dropdown">

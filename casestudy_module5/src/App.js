@@ -13,6 +13,7 @@ import ListCustomer from "./components/customer/ListCustomer";
 import {VillaList} from "./components/facility/VillaList";
 import {ToastContainer} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import {ListContract} from "./components/contract/ListContract";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
                 <Route path="/customers-list" element={<ListCustomer/>}/>
                 <Route path="/customer-add" element={<AddCustomer/>}/>
                 <Route path="/customer-edit" element={<EditCustomer/>}/>
+                <Route path="/contract-list" element={<ListContract/>}/>
             </Routes>
             <Footer/>
             <ToastContainer/>
