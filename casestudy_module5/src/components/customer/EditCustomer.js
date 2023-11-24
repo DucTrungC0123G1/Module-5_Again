@@ -1,7 +1,59 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
+import {useNavigate, useParams} from "react-router-dom";
+import {getCustomerType} from "../../services/customers-type/customerType_service";
+import {editCustomer, getCustomerById} from "../../services/customers/customer_service";
+import {toast} from "react-toastify";
 
 export function EditCustomer() {
+    const {id} = useParams();
+    const navigate = useNavigate();
+    const [customer, setCustomer] = useState(null);
+    const [customerType, setCustomerType] = useState([]);
+
+    const loadTypeCustomer = async () => {
+        const res = await getCustomerType();
+        setCustomerType(res);
+    }
+
+    const findById = async () => {
+        const rs = await getCustomerById(id)
+        setCustomer(rs)
+    }
+
+
+    useEffect(() => {
+        loadTypeCustomer()
+        findById()
+    }, [id])
+
+
+    const updateCustomer = async (data) => {
+        const rs = {...data, customerType: JSON.parse(data.customerType), id: id}
+        const res = await editCustomer(rs)
+        if (res.status === 200) {
+            toast.success("Chỉnh Sửa Thành Công")
+            navigate("/customers-list")
+        } else {
+            toast.error("Chỉnh Sửa Thất Bại")
+        }
+
+    }
+    if (!customer) {
+        return null;
+    }
+
+    const initValue = {
+        name:customer?.name,
+        dob: customer?.dob,
+        gender: customer?.gender,
+        identity: customer?.identity,
+        phone: customer?.phone,
+        email: customer?.email,
+        customerType:JSON.stringify(customer?.customerType),
+        location:customer?.location,
+    }
+
     return (
         <>
             <div style={{textAlign: "center"}}>

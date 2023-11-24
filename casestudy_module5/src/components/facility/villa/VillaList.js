@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
-import {getVillaList} from "../../services/facility/villas_service";
-import {getListTypeRental} from "../../services/type-rental/type_rental";
+import {getVillaList} from "../../../services/facility/villas_service";
+import {getListTypeRental} from "../../../services/type-rental/type_rental";
 
 export function VillaList() {
     const [villas, setVilla] = useState([]);

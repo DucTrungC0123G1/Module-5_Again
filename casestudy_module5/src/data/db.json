@@ -3,6 +3,14 @@
     {
       "id": 2,
       "code": "Contract-02",
+      "customer": {
+        "id": 1,
+        "name": "Nguyễn Đức Trung"
+      },
+      "villa": {
+        "id": 1,
+        "name": "SUPERIOR ROOM FACING LAKE"
+      },
       "dateStart": "2023-05-15",
       "dateEnd": "2023-06-15",
       "depositMoney": 500000,
@@ -11,6 +19,14 @@
     {
       "id": 3,
       "code": "Contract-03",
+      "customer": {
+        "id": 2,
+        "name": "Nguyễn Hoàng Phát"
+      },
+      "house": {
+        "id": 10,
+        "name": "SUPERIOR ROOM FACING LAKE"
+      },
       "dateStart": "2023-12-23",
       "dateEnd": "2023-12-30",
       "depositMoney": 500000,
@@ -19,6 +35,14 @@
     {
       "id": 4,
       "code": "Contract-04",
+      "customer": {
+        "id": 5,
+        "name": "Phan Việt"
+      },
+      "villas": {
+        "id": 2,
+        "name": "SUPERIOR ROOM FACING LAKE"
+      },
       "dateStart": "2023-01-25",
       "dateEnd": "2023-05-15",
       "depositMoney": 500000,
@@ -27,6 +51,14 @@
     {
       "id": 5,
       "code": "Contract-05",
+      "customer": {
+        "id": 6,
+        "name": "Nguyễn Hoàng"
+      },
+      "villas": {
+        "id": 3,
+        "name": "SUPERIOR ROOM FACING LAKE"
+      },
       "dateStart": "2023-10-15",
       "dateEnd": "2023-11-15",
       "depositMoney": 500000,
@@ -35,6 +67,14 @@
     {
       "id": 6,
       "code": "Contract-06",
+      "customer": {
+        "id": 7,
+        "name": "Trần Trung"
+      },
+      "villas": {
+        "id": 4,
+        "name": "SUPERIOR ROOM FACING LAKE"
+      },
       "dateStart": "2023-04-15",
       "dateEnd": "2023-06-15",
       "depositMoney": 500000,
@@ -43,6 +83,14 @@
     {
       "id": 7,
       "code": "Contract-07",
+      "customer": {
+        "id": 8,
+        "name": "Phan Phát"
+      },
+      "villas": {
+        "id": 5,
+        "name": "SUPERIOR ROOM FACING LAKE"
+      },
       "dateStart": "2023-07-22",
       "dateEnd": "2023-08-22",
       "depositMoney": 500000,
@@ -51,6 +99,14 @@
     {
       "id": 8,
       "code": "Contract-08",
+      "customer": {
+        "id": 9,
+        "name": "Trần Viết Hùng"
+      },
+      "house": {
+        "id": 11,
+        "name": "SUPERIOR ROOM FACING LAKE"
+      },
       "dateStart": "2023-07-22",
       "dateEnd": "2023-08-22",
       "depositMoney": 500000,
@@ -59,6 +115,14 @@
     {
       "id": 9,
       "code": "Contract-09",
+      "customer": {
+        "id": 10,
+        "name": "Nguyễn Văn Linh"
+      },
+      "house": {
+        "id": 12,
+        "name": "SUPERIOR ROOM FACING LAKE"
+      },
       "dateStart": "2023-09-22",
       "dateEnd": "2023-10-22",
       "depositMoney": 500000,
@@ -107,6 +171,118 @@
       },
       "location": "Việt Nam123",
       "id": 5
+    },
+    {
+      "id": 6,
+      "name": "Nguyễn Hoàng",
+      "dob": "2001-06-05",
+      "gender": "Nam",
+      "identity": "049098000697",
+      "phone": "0338210411",
+      "email": "TrungNguyen@gmail.com",
+      "customerType": {
+        "id": 2,
+        "name": "Platinium"
+      },
+      "location": "Việt Nam"
+    },
+    {
+      "id": 7,
+      "name": "Trần Trung",
+      "dob": "2001-06-05",
+      "gender": "Nam",
+      "identity": "049098000697",
+      "phone": "0338210411",
+      "email": "TrungNguyen@gmail.com",
+      "customerType": {
+        "id": 2,
+        "name": "Platinium"
+      },
+      "location": "Việt Nam"
+    },
+    {
+      "id": 8,
+      "name": "Phan Phát",
+      "dob": "2001-06-05",
+      "gender": "Nam",
+      "identity": "049098000697",
+      "phone": "0338210411",
+      "email": "TrungNguyen@gmail.com",
+      "customerType": {
+        "id": 2,
+        "name": "Platinium"
+      },
+      "location": "Việt Nam"
+    },
+    {
+      "id": 9,
+      "name": "Trần Viết Hùng",
+      "dob": "2001-06-05",
+      "gender": "Nam",
+      "identity": "049098000697",
+      "phone": "0338210411",
+      "email": "TrungNguyen@gmail.com",
+      "customerType": {
+        "id": 2,
+        "name": "Platinium"
+      },
+      "location": "Việt Nam"
+    },
+    {
+      "id": 10,
+      "name": "Nguyễn Văn Linh",
+      "dob": "2001-06-05",
+      "gender": "Nam",
+      "identity": "049098000697",
+      "phone": "0338210411",
+      "email": "TrungNguyen@gmail.com",
+      "customerType": {
+        "id": 2,
+        "name": "Platinium"
+      },
+      "location": "Việt Nam"
+    },
+    {
+      "id": 11,
+      "name": "Phạm Văn Trọng",
+      "dob": "2001-06-05",
+      "gender": "Nam",
+      "identity": "049098000697",
+      "phone": "0338210411",
+      "email": "TrungNguyen@gmail.com",
+      "customerType": {
+        "id": 2,
+        "name": "Platinium"
+      },
+      "location": "Việt Nam"
+    },
+    {
+      "id": 12,
+      "name": "Trần Khoa",
+      "dob": "2001-06-05",
+      "gender": "Nam",
+      "identity": "049098000697",
+      "phone": "0338210411",
+      "email": "TrungNguyen@gmail.com",
+      "customerType": {
+        "id": 2,
+        "name": "Platinium"
+      },
+      "location": "Việt Nam"
+    },
+    {
+      "name": "Nguyen Duc Trung",
+      "dob": "2005-11-01",
+      "gender": "Nam",
+      "identity": "123123123",
+      "phone": "0706169836",
+      "email": "elegant1230@gmail.com",
+      "customerType": {
+        "id": 5,
+        "name": "Member"
+      },
+      "location": "Đà nẵng",
+      "id": 13
     }
   ],
   "CustomerType": [

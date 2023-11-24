@@ -10,7 +10,7 @@ import {AddCustomer} from "./components/customer/AddCustomer";
 import {EditCustomer} from "./components/customer/EditCustomer";
 import {Index} from "./components/index/Index";
 import ListCustomer from "./components/customer/ListCustomer";
-import {VillaList} from "./components/facility/VillaList";
+import {VillaList} from "./components/facility/villa/VillaList";
 import {ToastContainer} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import {ListContract} from "./components/contract/ListContract";
