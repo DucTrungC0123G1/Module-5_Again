@@ -3,15 +3,7 @@
     {
       "id": 2,
       "code": "Contract-02",
-      "customer": {
-        "id": 1,
-        "name": "Nguyễn Đức Trung"
-      },
-      "villa": {
-        "id": 1,
-        "name": "SUPERIOR ROOM FACING LAKE"
-      },
-      "dateStart": "2023-05-15",
+      "dateStart": "2023-05-16",
       "dateEnd": "2023-06-15",
       "depositMoney": 500000,
       "totalMoney": 1000000
@@ -111,22 +103,6 @@
       "dateEnd": "2023-08-22",
       "depositMoney": 500000,
       "totalMoney": 1000000
-    },
-    {
-      "id": 9,
-      "code": "Contract-09",
-      "customer": {
-        "id": 10,
-        "name": "Nguyễn Văn Linh"
-      },
-      "house": {
-        "id": 12,
-        "name": "SUPERIOR ROOM FACING LAKE"
-      },
-      "dateStart": "2023-09-22",
-      "dateEnd": "2023-10-22",
-      "depositMoney": 500000,
-      "totalMoney": "100000"
     }
   ],
   "Customers": [
@@ -269,20 +245,6 @@
         "name": "Platinium"
       },
       "location": "Việt Nam"
-    },
-    {
-      "name": "Nguyen Duc Trung",
-      "dob": "2005-11-01",
-      "gender": "Nam",
-      "identity": "123123123",
-      "phone": "0706169836",
-      "email": "elegant1230@gmail.com",
-      "customerType": {
-        "id": 5,
-        "name": "Member"
-      },
-      "location": "Đà nẵng",
-      "id": 13
     }
   ],
   "CustomerType": [

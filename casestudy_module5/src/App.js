@@ -14,6 +14,11 @@ import {VillaList} from "./components/facility/villa/VillaList";
 import {ToastContainer} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import {ListContract} from "./components/contract/ListContract";
+import ContractCreate from "./components/contract/CreateContract";
+import CreateContract from "./components/contract/CreateContract";
+import EditContract from "./components/contract/EditContract";
+import {RoomList} from "./components/facility/room/RoomList";
+import {HouseList} from "./components/facility/house/HouseList";
 
 
 function App() {
@@ -26,10 +31,14 @@ function App() {
                 <Route path="/facility-add" element={<AddFacility/>}/>
                 <Route path="/facility-edit" element={<EditFacility/>}/>
                 <Route path="/facility-villa" element={<VillaList/>}/>
+                <Route path="/facility-room" element={<RoomList/>}/>
+                <Route path="/facility-house" element={<HouseList/>}/>
                 <Route path="/customers-list" element={<ListCustomer/>}/>
                 <Route path="/customer-add" element={<AddCustomer/>}/>
-                <Route path="/customer-edit" element={<EditCustomer/>}/>
+                <Route path="/customer-edit/:id" element={<EditCustomer/>}/>
                 <Route path="/contract-list" element={<ListContract/>}/>
+                <Route path="/contract-add" element={<CreateContract/>}/>
+                <Route path="/contract-edit/:id" element={<EditContract/>}/>
             </Routes>
             <Footer/>
             <ToastContainer/>

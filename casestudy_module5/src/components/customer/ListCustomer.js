@@ -57,19 +57,19 @@ export function CustomerList() {
                     <div className="form-outline" style={{display: 'flex'}}>
                         {/*onChange={(evt)=>{setNameSearch(evt.target.value)}}*/}
                         <Link className="btn btn-outline-primary" to="/customer-add">Add</Link>
-                        {/*<input style={{marginLeft: '70%', width: '15%'}} type="text" id="nameSearch"*/}
-                        {/*       className="form-control" placeholder="Search Name"/>*/}
-                        {/*<div>*/}
-                        {/*    <select style={{width:'100%'}} id="typeSearch" className="form-select" aria-label="Default select example">*/}
-                        {/*        <option value="">Select</option>*/}
-                        {/*        {customerType.map((customerType) => (*/}
-                        {/*            <option key={customerType.id} value={customerType.id}>{customerType.name}</option>*/}
-                        {/*        ))}*/}
-                        {/*    </select>*/}
-                        {/*</div>*/}
-                        {/*<button type="submit" className="btn btn-primary" onClick={() => getSearch()}>*/}
-                        {/*    <i className="fas fa-search"/>*/}
-                        {/*</button>*/}
+                        <input style={{marginLeft: '70%', width: '15%'}} type="text" id="nameSearch"
+                               className="form-control" placeholder="Search Name"/>
+                        <div>
+                            <select style={{width:'100%'}} id="typeSearch" className="form-select" aria-label="Default select example">
+                                <option value="">Select</option>
+                                {customerType.map((customerType) => (
+                                    <option key={customerType.id} value={customerType.id}>{customerType.name}</option>
+                                ))}
+                            </select>
+                        </div>
+                        <button type="submit" className="btn btn-primary" onClick={() => getSearch()}>
+                            <i className="fas fa-search"/>
+                        </button>
                     </div>
                     <table className="table" style={{marginTop:'20px'}}>
                         <thead>
@@ -99,7 +99,7 @@ export function CustomerList() {
                                     <td>{c.customerType.name}</td>
                                     <td>{c.location}</td>
                                     <td><Link className="btn btn-outline-primary"
-                                              to={`/customers/edit/${c.id}`}>Edit</Link>
+                                              to={`/customer-edit/${c.id}`}>Edit</Link>
                                         <button onClick={() => handleModal(c)}
                                                 className="btn btn-outline-danger">Delete
                                         </button>
