@@ -21,7 +21,7 @@ export function CustomerDelete({isModalShow, selectedCustomer, closeModal}) {
                             <div className="modal-header">
                                 <h5 className="modal-title">Modal title</h5>
                                 <button type="button" className="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close" onClick={closeModal}></button>
+                                        aria-label="Close" onClick={closeModal}/>
                             </div>
                             <div className="modal-body">
                                 <p>Do you want to delete: <b> {selectedCustomer.name}</b></p>

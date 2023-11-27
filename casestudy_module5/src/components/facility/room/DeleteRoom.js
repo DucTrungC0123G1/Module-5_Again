@@ -1,11 +1,11 @@
 import {toast} from "react-toastify";
 import React from "react";
-import {deleteVilla} from "../../../services/facility/villas_service";
+import {removeRoom} from "../../../services/facility/room_service";
 
-export function VillaDelete({isModalShow, selectedVilla, closeModal}) {
+export function DeleteRoom({isModalShow, selectedRoom, closeModal}) {
     // const {isModalShow, selectedCustomer, closeModal} = props
-    const handleDelete = async (villas) => {
-        const rs = await deleteVilla(villas.id);
+    const handleDelete = async (rooms) => {
+        const rs = await removeRoom(rooms.id);
         if (rs.status === 200) {
             closeModal();
             toast("Delete Success")
@@ -24,14 +24,14 @@ export function VillaDelete({isModalShow, selectedVilla, closeModal}) {
                                         aria-label="Close" onClick={closeModal}/>
                             </div>
                             <div className="modal-body">
-                                <p>Do you want to delete: <b> {selectedVilla.name}</b></p>
+                                <p>Do you want to delete: <b> {selectedRoom.name}</b></p>
                             </div>
                             <div className="modal-footer">
                                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal"
                                         onClick={closeModal}>Close
                                 </button>
                                 <button type="button" className="btn btn-danger"
-                                        onClick={() => handleDelete(selectedVilla)}>Delete
+                                        onClick={() => handleDelete(selectedRoom)}>Delete
                                 </button>
                             </div>
                         </div>
@@ -41,4 +41,3 @@ export function VillaDelete({isModalShow, selectedVilla, closeModal}) {
         ))
 }
 
-export default VillaDelete;

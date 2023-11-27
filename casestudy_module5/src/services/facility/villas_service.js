@@ -7,11 +7,12 @@ export const getAll = async (searchName,searchType)=>{
             // console.log(response);
             return response.data;
         } catch (e) {
+            console.log("------------------")
             console.log(e)
         }
     }else {
         try {
-            const response = await axios.get(`http://localhost:8080/Villas?name_like=${searchName}&typeRent.id_like=${searchType}`);
+            const response = await axios.get(`http://localhost:8080/Villas?name_like=${searchName}&typeRental.id_like=${searchType}`);
             // console.log(response);
             return response.data;
         } catch (e) {
@@ -30,18 +31,18 @@ export const create = async (data) => {
 }
 
 export const deleteVilla = async (id) => {
-    const response = await axios.delete(`http://localhost:8080/Villas` + `/${id}`);
+    const response = await axios.delete(`http://localhost:8080/Villas/${id}`);
     console.log(response)
     return response;
 }
 
 export const findById = async (id) => {
-    const response = await axios.get(`http://localhost:8080/Villas` + `/${id}`);
+    const response = await axios.get(`http://localhost:8080/Villas/${id}`);
     return response.data;
 }
 
 export const updateVilla = async (villa) => {
-    const response = await axios.put(`http://localhost:8080/Villas` + `/${villa.id}`,villa);
+    const response = await axios.put(`http://localhost:8080/Villas/${villa.id}`,villa);
     console.log(response)
     return response;
 }

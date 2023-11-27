@@ -333,22 +333,6 @@
       "standard": "Vip",
       "poolArea": 10,
       "floor": 2
-    },
-    {
-      "id": 5,
-      "name": "SUPERIOR ROOM FACING LAKE",
-      "area": "40",
-      "cost": 200000,
-      "capacity": 3,
-      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Lagoon-Superior-twin-bed-M-1047x563.jpg",
-      "typeRental": {
-        "id": 2,
-        "name": "day"
-      },
-      "description": "alo",
-      "standard": "Vip",
-      "poolArea": 10,
-      "floor": 2
     }
   ],
   "Room": [
@@ -391,22 +375,6 @@
       "cost": 200000,
       "capacity": 3,
       "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Furama_Garden-Deluxe-5-872x563.jpg",
-      "typeRental": {
-        "id": 2,
-        "name": "day"
-      },
-      "description": "alo",
-      "standard": "Vip",
-      "poolArea": 10,
-      "floor": 2
-    },
-    {
-      "id": 9,
-      "name": "SUPERIOR ROOM FACING LAKE",
-      "area": "40",
-      "cost": 200000,
-      "capacity": 3,
-      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Lagoon-Superior-twin-bed-M-1047x563.jpg",
       "typeRental": {
         "id": 2,
         "name": "day"
@@ -473,22 +441,6 @@
       "cost": 200000,
       "capacity": 3,
       "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Lagoon-Superior-twin-bed-M-1047x563.jpg",
-      "typeRental": {
-        "id": 2,
-        "name": "day"
-      },
-      "description": "alo",
-      "standard": "Vip",
-      "poolArea": 10,
-      "floor": 2
-    },
-    {
-      "id": 14,
-      "name": "SUPERIOR ROOM FACING LAKE",
-      "area": "40",
-      "cost": 200000,
-      "capacity": 3,
-      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/722781/722781/63984554_XL.jpg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=55",
       "typeRental": {
         "id": 2,
         "name": "day"

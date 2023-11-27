@@ -1,15 +1,13 @@
 import React, {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
-import {toast} from "react-toastify";
-import {deleteVilla, getAll} from "../../../services/facility/villas_service";
+import {getAll} from "../../../services/facility/villas_service";
 import {getListTypeRental} from "../../../services/type-rental/type_rental";
-import {DeleteVilla} from "./DeleteVilla";
-import CustomerDelete from "../../customer/DeleteCustomer";
+import VillaDelete from "./DeleteVilla";
 
 export function VillaList() {
     const [villas, setVillas] = useState([]);
     const [modalStatus, setModalStatus] = useState(false);
-    const [selectVilla, setSelectVilla] = useState();
+    const [selectedVilla, setSelectedVilla] = useState();
     const [nameSearch, setNameSearch] = useState("");
     const [searchType, setSearchType] = useState("");
     const [typeRental, setTypeRental] = useState([]);
@@ -22,20 +20,22 @@ export function VillaList() {
     const getVilla = async () => {
         const response = await getAll(nameSearch, searchType);
         // console.log(response);
-        setVillas(response.data);
+        setVillas(response);
     }
 
     const listTypeRent = async () => {
-        const response = await getListTypeRental();
-        setTypeRental(response);
+        const res = await getListTypeRental(searchType);
+        console.log(res)
+        setTypeRental(res);
     }
     const handleModal = (c) => {
         setModalStatus(true);
-        setSelectVilla(c);
+        setSelectedVilla(c);
     }
     const closeModal = () => {
         setModalStatus(false);
-        // getCustomer();
+        getVilla();
+
     }
     const getSearch = () => {
         const nameSearch = document.getElementById("nameSearch").value;
@@ -49,13 +49,10 @@ export function VillaList() {
     return (
         <div className="container" style={{minHeight: "600px"}}>
             <h1 style={{textAlign: "center"}}>Villa List</h1>
-            <Link to="/villas/create">
-                <button className="btn btn-primary">Create</button>
-            </Link>
             <div className="container">
                 <div className="form-outline" style={{display: 'flex'}}>
                     {/*onChange={(evt)=>{setNameSearch(evt.target.value)}}*/}
-                    <Link className="btn btn-outline-primary" to="/customer-add">Add</Link>
+                    <Link className="btn btn-outline-primary" to="/villa-add">Add</Link>
                     <input style={{marginLeft: '70%', width: '15%'}} type="text" id="nameSearch"
                            className="form-control" placeholder="Search Name"/>
                     <div>
@@ -74,7 +71,7 @@ export function VillaList() {
 
                 <div className="row">
                     {villas.length !== 0 ?
-                        villas.map(villa => (
+                        villas.map((villa) => (
                             <div className="col-12 col-sm-6 col-xl-4 mt-4" key={villa.id}>
                                 <div className="card size-card">
                                     <a href="#">
@@ -89,11 +86,11 @@ export function VillaList() {
                                             {/*<button className="btn btn-outline-danger ms-2"*/}
                                             {/*        onClick={() => handleModal(value)}>Xóa*/}
                                             {/*</button>*/}
-                                            <Link style={{marginLeft: "10px"}} to="/villas"
+                                            <button style={{marginLeft: "10px"}}
                                                   className="btn btn-outline-danger"
                                                   onClick={() => handleModal(villa)}>
                                                 Delete
-                                            </Link>
+                                            </button>
                                         </p>
                                     </div>
                                 </div>
@@ -104,12 +101,12 @@ export function VillaList() {
                         )
                     }
                 </div>
-                <CustomerDelete
+                <VillaDelete
                     isModalShow={modalStatus}
-                    selectedVilla={setSelectVilla}
+                    selectedVilla={selectedVilla}
                     closeModal={closeModal}
                 >
-                </CustomerDelete>
+                </VillaDelete>
             </div>
         </div>
     )
