@@ -52,7 +52,7 @@ export function RoomList() {
             <div className="container">
                 <div className="form-outline" style={{display: 'flex'}}>
                     {/*onChange={(evt)=>{setNameSearch(evt.target.value)}}*/}
-                    <Link className="btn btn-outline-primary" to="/room-add">Add</Link>
+                    <Link className="btn btn-outline-primary" to="/facility-room-add">Add</Link>
                     <input style={{marginLeft: '70%', width: '15%'}} type="text" id="nameSearch"
                            className="form-control" placeholder="Search Name"/>
                     <div>
@@ -75,14 +75,14 @@ export function RoomList() {
                             <div className="col-12 col-sm-6 col-xl-4 mt-4" key={room.id}>
                                 <div className="card size-card">
                                     <a href="#">
-                                        <img src={room.image} className="card-img-top" alt="..."/>
+                                        <img style={{height:"300px",width:"405px"}} src={room.image} className="card-img-top" alt="..."/>
                                     </a>
                                     <div className="card-body">
                                         <p className="card-text">{room.name}<br/>
                                             Room size: {room.area}<br/>
                                             Type Rent : {room.typeRental.name}<br/>
                                             <Link className="btn btn-outline-success"
-                                                  to={`/villas/update/${room.id}`}>Update</Link>
+                                                  to={`/facility-room-edit/${room.id}`}>Update</Link>
                                             {/*<button className="btn btn-outline-danger ms-2"*/}
                                             {/*        onClick={() => handleModal(value)}>Xóa*/}
                                             {/*</button>*/}

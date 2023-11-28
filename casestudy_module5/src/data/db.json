@@ -337,22 +337,6 @@
   ],
   "Room": [
     {
-      "id": 6,
-      "name": "SUPERIOR ROOM FACING LAKE",
-      "area": "40",
-      "cost": 200000,
-      "capacity": 3,
-      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/722781/722781/63984554_XL.jpg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=55",
-      "typeRental": {
-        "id": 2,
-        "name": "day"
-      },
-      "description": "alo",
-      "standard": "Vip",
-      "poolArea": 10,
-      "floor": 2
-    },
-    {
       "id": 7,
       "name": "SUPERIOR ROOM FACING LAKE",
       "area": "40",
@@ -383,6 +367,54 @@
       "standard": "Vip",
       "poolArea": 10,
       "floor": 2
+    },
+    {
+      "name": "Delux123",
+      "area": "123",
+      "cost": "20000",
+      "capacity": "3",
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/722779/722779/63984540_XL.jpg?auto=format,compress&fit=crop&crop=entropy&w=1488&q=75",
+      "typeRental": {
+        "id": 4,
+        "name": "year"
+      },
+      "description": "Phòng ngon",
+      "standard": "Vip",
+      "poolArea": "123",
+      "floor": "2",
+      "id": 9
+    },
+    {
+      "name": "Delux",
+      "area": "123",
+      "cost": "20000",
+      "capacity": "5",
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/724012/724012/Ocean_Studio_Suite_-_Overall.JPG?auto=format,compress&fit=crop&crop=entropy&w=1488&q=75",
+      "typeRental": {
+        "id": 3,
+        "name": "month"
+      },
+      "description": "Phòng Ngon",
+      "standard": "Vip",
+      "poolArea": "5",
+      "floor": "2",
+      "id": 10
+    },
+    {
+      "name": "RoomVip Ok",
+      "area": "55",
+      "cost": "10000",
+      "capacity": "5",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Studio-Suite-F-370x239.jpg",
+      "typeRental": {
+        "id": 4,
+        "name": "year"
+      },
+      "description": "Phòng Ngon",
+      "standard": "Okke ôkkee",
+      "poolArea": "20",
+      "floor": "2",
+      "id": 11
     }
   ],
   "House": [

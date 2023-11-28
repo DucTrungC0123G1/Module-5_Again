@@ -28,19 +28,26 @@ export function CreateContract() {
         depositMoney: "",
         totalMoney: "",
     }
+    const currentDay = new Date();
     const validateObject = {
         code: Yup.string()
-            .required("Code do not empty"),
-        dateStart: Yup.string()
-            .required("Date do not empty"),
-        dateEnd: Yup.string()
-            .required("Date do not empty"),
+            .required("Không để trống"),
+        dateStart: Yup.date()
+            .required("Không để trống")
+            .min(currentDay,"Không được sau ngày hiện tại"),
+        dateEnd: Yup.date()
+            .required("Không để trống")
+            .min(Yup.ref("dateStart"),"Không được sau ngày bắt đầu")
+            .test("dateEnd", "Ngày kết thúc không được sau ngày bắt đầu", function (value) {
+                const { dateStart } = this.parent;
+                return  value > dateStart;
+            }),
         depositMoney: Yup.string()
-            .required("Do not empty")
-            .min(1, "Money must be greater than 0"),
+            .required("Không để trống")
+            .min(1, "Tiền phải lớn hơn 0"),
         totalMoney: Yup.string()
-            .required("Do not empty")
-            .min(1, "Money must be greater than 0"),
+            .required("Không để trống")
+            .min(1, "Tiền phải lớn hơn 0"),
     }
     return (
         <>
@@ -98,11 +105,9 @@ export function CreateContract() {
                                         </Link>
                                     </div>
                                 </div>
-
                             </Form>
                         </div>
                     </div>
-
                 </div>
             </Formik>
         </>

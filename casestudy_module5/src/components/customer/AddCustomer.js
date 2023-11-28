@@ -64,7 +64,7 @@ export function AddCustomer() {
             .matches(/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/, "Email phải đúng định dạng abc@xxx.com "),
         customerType: Yup.string()
             .required("Không Được Để Trống"),
-        location: Yup.string()
+        location: Yup.date()
             .required("Không Được Để Trống"),
     }
 
